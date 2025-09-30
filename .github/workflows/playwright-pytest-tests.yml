@@ -51,7 +51,7 @@ jobs:
         run: allure generate reports/allure-results --clean -o reports/allure-report
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v6
+        uses: peaceiris/actions-gh-pages@v6.4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./reports/allure-report
