@@ -33,27 +33,22 @@ jobs:
       - name: Clean old Allure reports
         run: rm -rf reports/*
 
-      - name: Run tests
-        continue-on-error: true
-        run: pytest -n 4 --browser chromium
+      - name: Run Playwright tests with pytest
+        run: pytest
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
       - name: Install Allure CLI
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-
-      - name: Download Allure CLI
-        run: |
-          wget https://github.com/allure-framework/allure2/releases/download/2.27.4/allure-2.27.4.zip
-          unzip -q allure-2.27.4.zip -d allure
-          export PATH=$PATH:$PWD/allure/bin
+        run: npm install -g allure-commandline
 
       - name: Generate Allure report
-        run: allure generate reports/allure-results --clean -o reports/allure-report
+        run: allure generate reports/allure-results -o reports/allure-report --clean
 
       - name: Deploy Allure report to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v6
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./reports/allure-report
-          publish_branch: gh-pages
+          publish_dir: ./allure-report
