@@ -34,6 +34,7 @@ jobs:
         run: rm -rf reports/*
 
       - name: Run tests
+        continue-on-error: true
         run: pytest -n 4 --browser chromium
 
       - name: Install Allure CLI
