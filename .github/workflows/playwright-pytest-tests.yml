@@ -34,7 +34,7 @@ jobs:
         run: rm -rf reports/*
 
       - name: Run tests
-        run: pytest -n --browser chromium
+        run: pytest -n 4 --browser chromium
 
       - name: Install Allure CLI
         uses: actions/setup-java@v3
