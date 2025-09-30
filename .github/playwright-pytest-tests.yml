@@ -1,0 +1,57 @@
+name: Playwright-pytest tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest-playwright
+
+      - name: Install Playwright browsers
+        run: playwright install
+
+      - name: Clean old Allure reports
+        run: rm -rf reports/*
+
+      - name: Run tests
+        run: pytest
+
+      - name: Install Allure CLI
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+
+      - name: Download Allure CLI
+        run: |
+          wget https://github.com/allure-framework/allure2/releases/download/2.27.4/allure-2.27.4.zip
+          unzip -q allure-2.27.4.zip -d allure
+          export PATH=$PATH:$PWD/allure/bin
+
+      - name: Generate Allure report
+        run: allure generate reports/allure-results --clean -o reports/allure-report
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports/allure-report
