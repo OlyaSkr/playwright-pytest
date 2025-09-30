@@ -1,0 +1,66 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Test login with invalid credentials and verify error message.","337","test_login_with_incorrect_email_and_password[chromium]","tests","Tue Sep 30 14:59:53 UTC 2025","passed","Tue Sep 30 14:59:53 UTC 2025","","test_login","",""
+"
+    Test Scroll Up without 'Arrow' button and
+    Scroll Down functionality.
+    ","12592","test_scroll_up_without_arrow_button[chromium]","tests","Tue Sep 30 15:01:15 UTC 2025","passed","Tue Sep 30 15:01:27 UTC 2025","","test_scroll_up_down","",""
+"
+    Test the Contact Us form functionality on automationexercise.com.
+    ","2345","test_contact_us_form[chromium]","tests","Tue Sep 30 14:59:37 UTC 2025","passed","Tue Sep 30 14:59:40 UTC 2025","","test_contact_us_form","",""
+"
+    Test Scroll Up using 'Arrow' button and
+    Scroll Down functionality.
+    ","12056","test_scroll_up_using_arrow_button[chromium]","tests","Tue Sep 30 15:01:03 UTC 2025","passed","Tue Sep 30 15:01:15 UTC 2025","","test_scroll_up_down","",""
+"
+    Test registering with an already existing email.
+    ","327","test_register_existing_email[chromium]","tests","Tue Sep 30 15:01:02 UTC 2025","passed","Tue Sep 30 15:01:03 UTC 2025","","test_register","",""
+"
+    Test register new user while place order.
+    ","7963","test_register_while_place_order[chromium]","tests","Tue Sep 30 14:59:58 UTC 2025","passed","Tue Sep 30 15:00:06 UTC 2025","","test_order","",""
+"
+    Test all products are visible and product detail page is visible.
+    ","681","test_all_products_and_product_detail_page[chromium]","tests","Tue Sep 30 15:00:27 UTC 2025","passed","Tue Sep 30 15:00:28 UTC 2025","","test_products","",""
+"
+    Test add product to the cart from the recommended list.
+    ","8630","test_add_product_from_recommended_list[chromium]","tests","Tue Sep 30 15:00:48 UTC 2025","passed","Tue Sep 30 15:00:57 UTC 2025","","test_products","",""
+"
+    Test register new user while place order and download invoice.
+    ","6618","test_register_while_place_order[chromium]","tests","Tue Sep 30 14:59:41 UTC 2025","passed","Tue Sep 30 14:59:48 UTC 2025","","test_download_invoice","",""
+"
+    Test the newsletter subscription form from the cart page.
+    ","1731","test_subscription_from_cart_page[chromium]","tests","Tue Sep 30 15:01:29 UTC 2025","passed","Tue Sep 30 15:01:31 UTC 2025","","test_subscription","",""
+"Test login with valid credentials.","648","test_login_with_valid_data[chromium]","tests","Tue Sep 30 14:59:50 UTC 2025","passed","Tue Sep 30 14:59:50 UTC 2025","","test_login","",""
+"
+    Test login before place order.
+    ","8802","test_login_before_place_order[chromium]","tests","Tue Sep 30 15:00:17 UTC 2025","passed","Tue Sep 30 15:00:26 UTC 2025","","test_order","",""
+"
+    Test the newsletter subscription form from the home page.
+    ","1545","test_subscription_from_home_page[chromium]","tests","Tue Sep 30 15:01:27 UTC 2025","passed","Tue Sep 30 15:01:29 UTC 2025","","test_subscription","",""
+"
+    Test review on product.
+    ","495","test_review_on_product[chromium]","tests","Tue Sep 30 15:00:47 UTC 2025","passed","Tue Sep 30 15:00:48 UTC 2025","","test_products","",""
+"
+    Test add products to the cart.
+    ","2816","test_add_products_to_cart[chromium]","tests","Tue Sep 30 15:00:30 UTC 2025","passed","Tue Sep 30 15:00:33 UTC 2025","","test_products","",""
+"Test logging out after a successful login.","1594","test_logout[chromium]","tests","Tue Sep 30 14:59:55 UTC 2025","passed","Tue Sep 30 14:59:56 UTC 2025","","test_login","",""
+"
+    Test registering a new user with randomly generated data.
+    ","2193","test_register_new_user[chromium]","tests","Tue Sep 30 15:00:58 UTC 2025","passed","Tue Sep 30 15:01:00 UTC 2025","","test_register","",""
+"
+    Test remove products from the cart.
+    ","3696","test_remove_products_from_cart[chromium]","tests","Tue Sep 30 15:00:37 UTC 2025","passed","Tue Sep 30 15:00:41 UTC 2025","","test_products","",""
+"
+    Test product quantity in the cart.
+    ","1111","test_products_quantity_in_cart[chromium]","tests","Tue Sep 30 15:00:34 UTC 2025","passed","Tue Sep 30 15:00:36 UTC 2025","","test_products","",""
+"
+    Test navigation to the Test Cases page and verify the title and URL.
+    ","1777","test_cases_page[chromium]","tests","Tue Sep 30 14:59:36 UTC 2025","passed","Tue Sep 30 14:59:37 UTC 2025","","test_cases","",""
+"
+    Test register new user before place order.
+    ","8347","test_register_before_place_order[chromium]","tests","Tue Sep 30 15:00:06 UTC 2025","passed","Tue Sep 30 15:00:14 UTC 2025","","test_order","",""
+"
+    Test products brand.
+    ","716","test_products_brand[chromium]","tests","Tue Sep 30 15:00:45 UTC 2025","passed","Tue Sep 30 15:00:46 UTC 2025","","test_products","",""
+"
+    Test products category.
+    ","786","test_products_category[chromium]","tests","Tue Sep 30 15:00:42 UTC 2025","passed","Tue Sep 30 15:00:43 UTC 2025","","test_products","",""
